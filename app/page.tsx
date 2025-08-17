@@ -1,17 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="space-y-12">
       <section className="text-center">
-        <div className="mx-auto mb-6 w-28 h-28 grid place-items-center rounded-2xl border">
-          <span className="font-bold">TH</span>
-        </div>
-        <h1 className="text-4xl md:text-5xl font-bold">Thanaris Tiles</h1>
+        <Image src="/logo.png" alt="Thanaris" width={140} height={140} className="mx-auto rounded-lg" />
+        <h1 className="text-4xl md:text-5xl font-bold mt-4">Thanaris Tiles</h1>
         <p className="text-lg text-gray-600 mt-3">Superfici in gres porcellanato di grande formato (600×1200 mm).</p>
+
         <div className="mt-6 flex items-center justify-center gap-4">
-          <Link href="/catalog" className="px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700">Sfoglia il catalogo</Link>
-          <Link href="/contact" className="px-6 py-3 rounded-lg border border-gray-300 hover:bg-gray-50">Richiedi preventivo</Link>
+          <Link href="/catalog" className="btn-primary">Sfoglia il catalogo</Link>
+          <Link href="/contact" className="px-6 py-2 rounded-md border border-gray-300 hover:bg-gray-50">Richiedi preventivo</Link>
         </div>
       </section>
 
@@ -20,20 +20,22 @@ export default function Home() {
       </section>
 
       <section className="grid md:grid-cols-3 gap-6">
-        {[
-          {title: 'Qualità Premium', desc: 'Lastre porcellanate resistenti e raffinate.'},
-          {title: 'Formati Ampi', desc: '600×1200 mm per continuità visiva.'},
-          {title: 'Preventivi Rapidi', desc: "Richiedi un'offerta personalizzata via email o WhatsApp."}
-        ].map((b, i) => (
-          <div key={i} className="bg-white p-6 rounded-xl border">
-            <h3 className="text-xl font-semibold mb-2">{b.title}</h3>
-            <p className="text-gray-600">{b.desc}</p>
-          </div>
-        ))}
+        <div className="bg-white p-6 rounded-xl border">
+          <h3 className="text-xl font-semibold mb-2">Qualità Premium</h3>
+          <p className="text-gray-600">Lastre porcellanate resistenti e raffinate.</p>
+        </div>
+        <div className="bg-white p-6 rounded-xl border">
+          <h3 className="text-xl font-semibold mb-2">Formati Ampi</h3>
+          <p className="text-gray-600">600×1200 mm per continuità visiva.</p>
+        </div>
+        <div className="bg-white p-6 rounded-xl border">
+          <h3 className="text-xl font-semibold mb-2">Preventivi Rapidi</h3>
+          <p className="text-gray-600">Ricevi un'offerta personalizzata via email o WhatsApp.</p>
+        </div>
       </section>
 
       <section className="text-center">
-        <p className="text-gray-700">Preferisci scaricare il catalogo completo?</p>
+        <p className="text-gray-700">Scarica il catalogo completo</p>
         <a href="/catalog.pdf" className="text-blue-600 underline">Scarica il PDF</a>
       </section>
     </div>
