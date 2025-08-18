@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
-      colors: {
-        brand: { purple: "#7E2AE0", gold: "#C9A253", dark: "#0C0A0E" }
-      }
-    },
+      colors: { brand: { dark: "#0C0A0E", gold: "#C9A253" } }
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};
