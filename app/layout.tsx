@@ -1,21 +1,18 @@
 import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
 
 export const metadata = {
-  metadataBase: new URL('https://thanaris.example'),
-  title: 'Thanaris Tiles — Superfici in gres porcellanato 600×1200 mm',
-  description: 'Catalogo Thanaris Tiles: lastre ceramiche di grande formato 600×1200 mm. Sfoglia i prodotti e richiedi un preventivo personalizzato.',
+  title: 'Thanaris Tiles — Superfici in gres porcellanato',
+  description: 'Superfici di grande formato 600×1200 mm. Catalogo, ispirazioni e preventivi.',
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'Thanaris Tiles',
-    description: 'Superfici in gres porcellanato di grande formato 600×1200 mm.',
-    url: 'https://thanaris.example',
-    siteName: 'Thanaris Tiles',
-    locale: 'it_IT',
+    description: 'Gres porcellanato grande formato.',
     type: 'website',
-  },
-  alternates: { canonical: '/' },
-  other: { 'theme-color': '#0C0A0E' }
+    locale: 'it_IT'
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -23,8 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="it">
       <body className="min-h-screen bg-white text-gray-900">
         <Header />
-        <main className="container py-8">{children}</main>
+        <main className="container">{children}</main>
         <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );
