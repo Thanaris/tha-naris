@@ -1,0 +1,18 @@
+{
+  "Nav": {
+    "catalog": "Katalog",
+    "whatsapp": "WhatsApp",
+    "email": "E-Mail"
+  },
+  "Home": {
+    "collectionsTitle": "Kollektionen",
+    "viewAll": "Alle ansehen",
+    "downloadTitle": "Gesamtkatalog herunterladen",
+    "downloadDesc": "Technische Daten, Oberflächen und Inspirationen in einer Datei.",
+    "downloadButton": "PDF herunterladen",
+    "projectTitle": "Haben Sie ein Projekt?",
+    "projectDesc": "Kontaktieren Sie uns für ein individuelles Angebot.",
+    "ctaWhatsapp": "Auf WhatsApp chatten",
+    "ctaEmail": "Angebot per E-Mail anfordern"
+  }
+}
