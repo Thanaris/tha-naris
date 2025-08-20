@@ -1,0 +1,18 @@
+{
+  "Nav": {
+    "catalog": "Catalogo",
+    "whatsapp": "WhatsApp",
+    "email": "Email"
+  },
+  "Home": {
+    "collectionsTitle": "Collezioni",
+    "viewAll": "Vedi tutto",
+    "downloadTitle": "Scarica il catalogo completo",
+    "downloadDesc": "Specifiche tecniche, finiture e ispirazioni in un unico file.",
+    "downloadButton": "Scarica PDF",
+    "projectTitle": "Hai un progetto?",
+    "projectDesc": "Contattaci per un preventivo su misura.",
+    "ctaWhatsapp": "Chatta su WhatsApp",
+    "ctaEmail": "Richiedi preventivo via Email"
+  }
+}
