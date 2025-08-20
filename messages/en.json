@@ -1,0 +1,18 @@
+{
+  "Nav": {
+    "catalog": "Catalog",
+    "whatsapp": "WhatsApp",
+    "email": "Email"
+  },
+  "Home": {
+    "collectionsTitle": "Collections",
+    "viewAll": "View all",
+    "downloadTitle": "Download full catalog",
+    "downloadDesc": "Technical specs, finishes and inspirations in one file.",
+    "downloadButton": "Download PDF",
+    "projectTitle": "Got a project?",
+    "projectDesc": "Contact us for a tailored quote.",
+    "ctaWhatsapp": "Chat on WhatsApp",
+    "ctaEmail": "Request a quote via Email"
+  }
+}
