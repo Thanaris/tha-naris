@@ -1,5 +1,4 @@
-// app/[locale]/page.tsx
-import Link from 'next-intl/link';
+import {Link} from 'next-intl/navigation';
 import {getTranslations} from 'next-intl/server';
 import Hero from '../../components/Hero';
 import {PRODUCTS} from '../../lib/products';
