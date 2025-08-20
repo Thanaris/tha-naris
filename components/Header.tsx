@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import Link from 'next-intl/link';
+import {Link} from 'next-intl/navigation';
 import {useTranslations} from 'next-intl';
 
 export default function Header() {
